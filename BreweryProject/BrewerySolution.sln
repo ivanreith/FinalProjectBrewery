@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreweryTests", "MMABooksTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreweryLibraryClasses", "MMABooksEFClasses\BreweryLibraryClasses.csproj", "{DB60B5AF-39D7-465F-B286-50A3B7928DFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreweryRESTAPI", "BreweryRESTAPI\BreweryRESTAPI.csproj", "{A3B5C552-723A-43CF-9A9B-D6CE0EA0E457}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DB60B5AF-39D7-465F-B286-50A3B7928DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB60B5AF-39D7-465F-B286-50A3B7928DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB60B5AF-39D7-465F-B286-50A3B7928DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B5C552-723A-43CF-9A9B-D6CE0EA0E457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B5C552-723A-43CF-9A9B-D6CE0EA0E457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B5C552-723A-43CF-9A9B-D6CE0EA0E457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B5C552-723A-43CF-9A9B-D6CE0EA0E457}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
