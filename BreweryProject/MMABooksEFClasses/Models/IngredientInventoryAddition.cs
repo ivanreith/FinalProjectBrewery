@@ -12,6 +12,13 @@ namespace BreweryLibraryClasses.Models
         public double? QuantityRemaining { get; set; }
         public decimal UnitCost { get; set; }
 
+        public override string ToString()
+        {
+            return IngredientInventoryAdditionId + ", " + IngredientId + ", " +
+                SupplierId + ", " + Quantity + ", " +
+                QuantityRemaining + ", " + UnitCost ;
+        }
+
         public virtual Ingredient Ingredient { get; set; }
         public virtual Supplier Supplier { get; set; }
     }
