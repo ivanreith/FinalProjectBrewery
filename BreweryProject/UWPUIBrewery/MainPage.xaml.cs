@@ -192,7 +192,7 @@ namespace UWPUIBrewery
                     this.OrderHistoryBtn.IsEnabled = true;
                     this.DeleteSupplierBtn.IsEnabled = true;
                     this.EditSupplierBtn.IsEnabled = true;
-                    this.CreateSupplierBtn.IsEnabled = false;
+                    this.CreateSupplierBtn.IsEnabled = true;
                     this.SearchSupplierBtn.IsEnabled = true;
                     this.SaveSupplierBtn.IsEnabled = false;
                     this.CancelBtn.IsEnabled = false;
