@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="460,101,0,0" FontSize="26" Text="Supplier Maintenance" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" RenderTransformOrigin="1.645,0.605"/>
@@ -14,10 +15,8 @@
         <Image HorizontalAlignment="Left" Height="72" Margin="23,21,0,0" VerticalAlignment="Top" Width="81" Source="Assets/StoreLogo.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="79,195,0,0" FontSize="20" Text="Supplier Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
         <TextBox HorizontalAlignment="Left" Margin="76,220,0,0" FontSize="20" Name="supplierNameTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="959"/>
-        <TextBlock HorizontalAlignment="Left" Margin="81,266,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"><Run Text="Address:"/><LineBreak/><Run/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="78,291,0,0" FontSize="20" x:Name="supplierAddressTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="551"/>
-        <TextBlock HorizontalAlignment="Left" Margin="582,0,0,0" FontSize="20" Text="Website" TextWrapping="Wrap" VerticalAlignment="Center" Width="182"/>
-        <TextBox HorizontalAlignment="Left" Margin="579,371,0,0" FontSize="20" x:Name="supplierWebsiteTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,348,0,0" FontSize="20" Text="Website" TextWrapping="Wrap" VerticalAlignment="Top" Width="348"/>
+        <TextBox HorizontalAlignment="Left" Margin="88,373,0,0" FontSize="20" x:Name="supplierWebsiteTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="859"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,411,0,0" FontSize="20" Text="Contact Person Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
         <TextBox HorizontalAlignment="Left" Margin="78,437,0,0" FontSize="20" x:Name="supplierContactPersonNameTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,492,0,0" FontSize="20" Text="Contact Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
@@ -35,10 +34,10 @@
         <TextBox HorizontalAlignment="Left" Margin="79,157,0,0" FontSize="20" x:Name="supplierIdTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
         <TextBlock HorizontalAlignment="Left" Margin="333,416,0,0" FontSize="20" Text="Contact PersonLast Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
         <TextBox HorizontalAlignment="Left" Margin="330,442,0,0" FontSize="20" x:Name="supplierContactPersonLastNameTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
-        <TextBlock HorizontalAlignment="Left" Margin="90,345,0,0" FontSize="20" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <TextBox HorizontalAlignment="Left" Margin="87,370,0,0" FontSize="20" x:Name="supplierEmailTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
-        <TextBlock HorizontalAlignment="Left" Margin="650,267,0,0" FontSize="20" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <TextBox HorizontalAlignment="Left" Margin="647,292,0,0" FontSize="20" x:Name="supplierPhoneTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,273,0,0" FontSize="20" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <TextBox HorizontalAlignment="Left" Margin="497,298,0,0" FontSize="20" x:Name="supplierEmailTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
+        <TextBlock HorizontalAlignment="Left" Margin="84,272,0,0" FontSize="20" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,297,0,0" FontSize="20" x:Name="supplierPhoneTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
 
 
 
