@@ -53,3 +53,8 @@ D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj
 D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\ProjectArchitectures.txt
 D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885598160000000.json
+D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\OrderHistory.xbf
+D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\OrderHistory.g.i.cs
+D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\OrderHistory.g.cs
+D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\OrderHistory.xaml
+D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\obj\x86\Debug\OrderHistory.xbf

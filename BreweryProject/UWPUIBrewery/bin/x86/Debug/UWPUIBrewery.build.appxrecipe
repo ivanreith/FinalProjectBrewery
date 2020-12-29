@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\OrderHistory.xbf">
+      <PackagePath>OrderHistory.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>

@@ -128,6 +128,9 @@
     <Compile Include="Models\IngredientInventoryAddition.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\SupplierAddress.cs" />
+    <Compile Include="OrderHistory.xaml.cs">
+      <DependentUpon>OrderHistory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HttpDataService.cs" />
   </ItemGroup>
@@ -154,6 +157,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OrderHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>

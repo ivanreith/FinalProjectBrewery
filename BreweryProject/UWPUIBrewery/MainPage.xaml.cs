@@ -56,6 +56,7 @@ namespace UWPUIBrewery
         public ObservableCollection<Ingredient> Ingredients { get; private set; } = new ObservableCollection<Ingredient>();
               public ObservableCollection<Supplier> Suppliers { get; private set; } = new ObservableCollection<Supplier>();
         public ObservableCollection<IngredientInventoryAddition> IngredientsAdditions { get; private set; } = new ObservableCollection<IngredientInventoryAddition>();
+        public ObservableCollection<IngredientInventoryAddition> IngredientsAdditions2 { get; private set; } = new ObservableCollection<IngredientInventoryAddition>();
 
         public MainPage()
         {
@@ -67,11 +68,17 @@ namespace UWPUIBrewery
             List<Supplier> suppliers = await service.GetAsync<List<Supplier>>("Suppliers");
             foreach (Supplier s in suppliers)
                 this.Suppliers.Add(s);
-          
+            // list ready for order history
+            List<IngredientInventoryAddition> IngredientsAdditions = await service.GetAsync<List<IngredientInventoryAddition>>("ingredientInventoryadditions");
+            foreach (IngredientInventoryAddition s in IngredientsAdditions)
+                this.IngredientsAdditions.Add(s);
+            //end order history stuff
             ClearSupplierDetails();
             EnableFields(false);
             this.supplierIdTxt.IsEnabled = true;
             EnableButtons("pageLoad");
+
+            
         }
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
@@ -320,7 +327,13 @@ namespace UWPUIBrewery
         }
         private void OrderHistory_Click(object sender, RoutedEventArgs e)
         {
-
+            List<IngredientInventoryAddition> IngredientsAdditions2 = new List<IngredientInventoryAddition>();
+            string supplierIdCompare = this.supplierIdTxt.Text;
+            foreach (IngredientInventoryAddition s in IngredientsAdditions)                
+                if (supplierIdCompare == s.SupplierId.ToString())
+                this.IngredientsAdditions2.Add(s);
+            this.Frame.Navigate(typeof(OrderHistory), IngredientsAdditions2);
+           
         }//END ORDER HISTORY
         private void EditSupplier_Click(object sender, RoutedEventArgs e)
         {
@@ -331,7 +344,7 @@ namespace UWPUIBrewery
         } //END EDIT
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
 

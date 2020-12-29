@@ -27,7 +27,7 @@
         <Button Content="Save" x:Name="SaveSupplierBtn" Click="SaveSupplier_Click" FontSize="20" Margin="532,662,0,0" RenderTransformOrigin="0.508,0.625" Width="122" Height="41" VerticalAlignment="Top"/>
         <Button Content="Delete Supplier" x:Name="DeleteSupplierBtn" Click="DeleteSupplier_Click" FontSize="20" Margin="214,664,0,0" RenderTransformOrigin="0.519,0.61" Height="41" VerticalAlignment="Top"/>
         <Button Content="Search" x:Name="SearchSupplierBtn" Click="SearchSupplier_Click" FontSize="20" Margin="372,157,0,0" RenderTransformOrigin="0.508,0.625" Width="151" Height="40" VerticalAlignment="Top"/>
-        <Button Content="Order History" x:Name="OrderHistoryBtn" Click="OrderHistory_Click" FontSize="20" Margin="684,661,0,0" RenderTransformOrigin="0.508,0.625" Height="41" VerticalAlignment="Top"/>
+
         <Button Content="Cancel" x:Name="CancelBtn" Click="Cancel_Click" FontSize="20" Margin="842,661,0,0" RenderTransformOrigin="0.508,0.625" Height="41" VerticalAlignment="Top"/>
         <Button Content="Edit" x:Name="EditSupplierBtn" Click="EditSupplier_Click" FontSize="20" Margin="394,662,0,0" RenderTransformOrigin="0.508,0.625" Width="122" Height="41" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,132,0,0" FontSize="20" Text="Supplier ID" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" SelectionChanged="TextBlock_SelectionChanged"/>
@@ -38,6 +38,7 @@
         <TextBox HorizontalAlignment="Left" Margin="497,298,0,0" FontSize="20" x:Name="supplierEmailTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
         <TextBlock HorizontalAlignment="Left" Margin="84,272,0,0" FontSize="20" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
         <TextBox HorizontalAlignment="Left" Margin="81,297,0,0" FontSize="20" x:Name="supplierPhoneTxt" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
+        <HyperlinkButton x:Name="OrderHistoryBtn" FontSize="20" Content="Order History" Margin="688,663,0,0" VerticalAlignment="Top" Click="OrderHistory_Click" />
 
 
 
