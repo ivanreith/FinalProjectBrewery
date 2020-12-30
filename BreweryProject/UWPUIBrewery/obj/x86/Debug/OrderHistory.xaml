@@ -5,48 +5,57 @@
     xmlns:local="using:UWPUIBrewery"  
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:BreweryLibraryClasses.Models" 
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                         >
 
     <Grid Margin="0,0,0,0" >
-
-
-
         <ListView x:ConnectionId='2'                                              Margin="0,0,0,92">
-            
-                <ListView.HeaderTemplate>
+
+            <ListView.HeaderTemplate>
                 <DataTemplate>
                     <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="408"/>
-                            <ColumnDefinition Width="360"/>
-                            <ColumnDefinition Width="360"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="Ingredient" Style="{ThemeResource CaptionTextBlockStyle}"/>
-                        <TextBlock Grid.Column="1" Text="Remaining" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                        <TextBlock Text="Ingredient ID" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                        <TextBlock Grid.Column="1" Text="Quantity Remaining" Style="{ThemeResource CaptionTextBlockStyle}"/>
                         <TextBlock Grid.Column="2" Text="Unit price" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                        <TextBlock Grid.Column="3" Text="Quantity" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                        <TextBlock Grid.Column="4" Text="Supplier ID" Style="{ThemeResource CaptionTextBlockStyle}"/>
                     </Grid>
                 </DataTemplate>
             </ListView.HeaderTemplate>
             <ListView.ItemTemplate>
-                <DataTemplate x:Name="TableDataTemplate"                                >
-                    <Grid x:ConnectionId='6' Height="48"                                                          >
+                <DataTemplate x:Name="TableDataTemplate"                                                >
+                    <Grid x:ConnectionId='6' Height="48"                                                  >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="48"/>
-                            <ColumnDefinition Width="360"/>
-                            <ColumnDefinition Width="360"/>
-                            <ColumnDefinition Width="360"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
+                            <ColumnDefinition Width="225"/>
                         </Grid.ColumnDefinitions>
-                       
-                        <TextBlock x:ConnectionId='7' Grid.Column="1" VerticalAlignment="Center" Style="{ThemeResource BaseTextBlockStyle}"                                        />
-                        <TextBlock x:ConnectionId='8' Grid.Column="2" VerticalAlignment="Center"                                            />
-                        <TextBlock x:ConnectionId='9' Grid.Column="3" VerticalAlignment="Center"                                   />
+
+                        <TextBlock x:ConnectionId='7' Grid.Column="1" VerticalAlignment="Center" Style="{ThemeResource BaseTextBlockStyle}"                              />
+                        <TextBlock x:ConnectionId='8' Grid.Column="2" VerticalAlignment="Center"                                  />
+                        <TextBlock x:ConnectionId='9' Grid.Column="3" VerticalAlignment="Center"                         />
+                        <TextBlock x:ConnectionId='10' Grid.Column="4" VerticalAlignment="Center"                         />
+                        <TextBlock x:ConnectionId='11' Grid.Column="5" VerticalAlignment="Center"                           />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
+
+
+
 
         <HyperlinkButton x:ConnectionId='3' x:Name="Close"                     FontSize="20" Content="Close" Margin="1084,643,73,0" VerticalAlignment="Top" Height="78" RenderTransformOrigin="0.656,0.438" HorizontalAlignment="Stretch" UseLayoutRounding="False" d:LayoutRounding="Auto">
         </HyperlinkButton>
