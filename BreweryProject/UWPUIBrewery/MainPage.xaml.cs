@@ -54,25 +54,23 @@ namespace UWPUIBrewery
             set { ingredientAdded = value; }// I don't think I need to modify it.
         }
         public ObservableCollection<Ingredient> Ingredients { get; private set; } = new ObservableCollection<Ingredient>();
-              public ObservableCollection<Supplier> Suppliers { get; private set; } = new ObservableCollection<Supplier>();
+        public ObservableCollection<Supplier> Suppliers { get; private set; } = new ObservableCollection<Supplier>();
         public ObservableCollection<IngredientInventoryAddition> IngredientsAdditions { get; private set; } = new ObservableCollection<IngredientInventoryAddition>();
-        public ObservableCollection<IngredientInventoryAddition> IngredientsAdditions2 { get; private set; } = new ObservableCollection<IngredientInventoryAddition>();
+        
 
         public MainPage()
         {
             this.InitializeComponent();
+           
         }
+        public ObservableCollection<IngredientInventoryAddition> ViewModel { get; set; }
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             service = new HttpDataService("http://localhost:5000/api");
             List<Supplier> suppliers = await service.GetAsync<List<Supplier>>("Suppliers");
             foreach (Supplier s in suppliers)
                 this.Suppliers.Add(s);
-            // list ready for order history
-            List<IngredientInventoryAddition> IngredientsAdditions = await service.GetAsync<List<IngredientInventoryAddition>>("ingredientInventoryadditions");
-            foreach (IngredientInventoryAddition s in IngredientsAdditions)
-                this.IngredientsAdditions.Add(s);
-            //end order history stuff
+           
             ClearSupplierDetails();
             EnableFields(false);
             this.supplierIdTxt.IsEnabled = true;
@@ -306,33 +304,33 @@ namespace UWPUIBrewery
         }// End SAVE
         private async void SearchSupplier_Click(object sender, RoutedEventArgs e)
         {
+            
             string supplierId = this.supplierIdTxt.Text;
-            try
+            if (supplierId != "" && supplierId != null)
             {
-                Selected = await service.GetAsync<Supplier>("suppliers\\" + supplierId, null, true);
-               
-                DisplaySupplierDetails();
-                EnableButtons("found");
+                try
+                {
+                    Selected = await service.GetAsync<Supplier>("suppliers\\" + supplierId, null, true);
 
-            }
-            catch
-            {
-                var messageDialog = new MessageDialog("A Supplier with that Supplier id cannot be found.");
-                await messageDialog.ShowAsync();
-                Selected = null;
-                ClearSupplierDetails();
-                EnableFields(false);
-                this.supplierIdTxt.IsEnabled = true;
+                    DisplaySupplierDetails();
+                    EnableButtons("found");
+
+                }
+                catch
+                {
+                    var messageDialog = new MessageDialog("A Supplier with that Supplier id cannot be found.");
+                    await messageDialog.ShowAsync();
+                    Selected = null;
+                    ClearSupplierDetails();
+                    EnableFields(false);
+                    this.supplierIdTxt.IsEnabled = true;
+                }
             }
         }
         private void OrderHistory_Click(object sender, RoutedEventArgs e)
         {
-            List<IngredientInventoryAddition> IngredientsAdditions2 = new List<IngredientInventoryAddition>();
-            string supplierIdCompare = this.supplierIdTxt.Text;
-            foreach (IngredientInventoryAddition s in IngredientsAdditions)                
-                if (supplierIdCompare == s.SupplierId.ToString())
-                this.IngredientsAdditions2.Add(s);
-            this.Frame.Navigate(typeof(OrderHistory), IngredientsAdditions2);
+            //string supplier = this.supplierIdTxt.Text;
+            this.Frame.Navigate(typeof(OrderHistory), supplierIdTxt.Text);
            
         }//END ORDER HISTORY
         private void EditSupplier_Click(object sender, RoutedEventArgs e)

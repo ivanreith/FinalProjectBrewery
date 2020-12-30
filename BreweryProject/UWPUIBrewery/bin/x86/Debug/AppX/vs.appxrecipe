@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-12-29T04:30:43.153</Modified>
+      <Modified>2020-12-30T01:32:48.160</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\UWPUIBrewery.exe">
       <PackagePath>entrypoint\UWPUIBrewery.exe</PackagePath>
-      <Modified>2020-12-29T04:30:42.382</Modified>
+      <Modified>2020-12-30T01:32:47.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ivanr\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -106,23 +106,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\UWPUIBrewery.xr.xml">
       <PackagePath>UWPUIBrewery.xr.xml</PackagePath>
-      <Modified>2020-12-29T03:34:37.685</Modified>
+      <Modified>2020-12-30T00:57:09.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-12-29T04:30:42.290</Modified>
+      <Modified>2020-12-30T01:32:47.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-12-29T04:30:42.290</Modified>
+      <Modified>2020-12-30T01:32:47.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\OrderHistory.xbf">
       <PackagePath>OrderHistory.xbf</PackagePath>
-      <Modified>2020-12-29T04:30:42.291</Modified>
+      <Modified>2020-12-30T01:32:47.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2020-12-29T04:30:42.290</Modified>
+      <Modified>2020-12-30T01:32:47.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -130,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-12-29T03:34:38.211</Modified>
+      <Modified>2020-12-30T00:57:10.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TRANSFER ASUS\CS234N\PROJECT\BreweryProjectVS\BreweryProject\UWPUIBrewery\bin\x86\Debug\Core\UWPUIBrewery.exe">
       <PackagePath>UWPUIBrewery.exe</PackagePath>
-      <Modified>2020-12-29T04:30:43.143</Modified>
+      <Modified>2020-12-30T01:32:48.151</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
